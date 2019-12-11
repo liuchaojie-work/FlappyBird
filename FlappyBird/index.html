@@ -2,9 +2,48 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title></title>
+		<title>FlappyBird(笨鸟先飞)</title>
+		<link href="./css/game.css" rel="stylesheet"="text/css" />
 	</head>
 	<body>
-		
+		<!-- 最外边框 -->
+		<div id="freamBound">
+			<!-- 开始界面 -->
+			<div id="start">
+				<!-- 游戏名 -->
+				<div id="gameName">
+					<!-- 游戏名旁边的鸟 -->
+					<img id="bird" src="img/bird.gif">
+				</div>
+				<!-- 开始游戏按钮 -->
+				<img id="btn_start" src="img/start.jpg">
+			</div>
+
+			<!-- 游戏界面 -->
+			<div id="game">
+				<img id="gameBird" src="img/bird.gif">
+				<!-- 水管 -->
+				<div id="pipes">
+					<div id="pipe">
+						<!-- 上半部分 -->
+						<div id="up">
+							<div id="up_mod"></div>
+							<div id="up_pipe"></div>
+						</div>
+						<!-- 下半部分 -->
+						<div id="down">
+							<div id="down_pipe"></div>
+							<div id="down_mod"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 滚动的线 -->
+			<div id="floorLine">
+
+			</div>
+		</div>
+		<script src="./js/game.js"></script>
 	</body>
 </html>

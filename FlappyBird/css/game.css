@@ -1,0 +1,133 @@
+/* 最外边框 */
+#freamBound {
+	/* border: 1px solid red; */
+	width: 343px;
+	height: 480px;
+	top: 50px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+/* 主界面 */
+#start {
+	/* border: 1px solid green; */
+	background-image: url(../img/bg.jpg);
+	width: 343px;
+	height: 480px;
+	position: absolute;
+	display: block;
+}
+
+#start #gameName {
+	/* border: 1px solid gray; */
+	background-image: url(../img/head.jpg);
+	width: 236px;
+	height: 77px;
+	position:absolute ;
+	top: 100px;
+	margin: 0 55px;	
+	animation: anim 0.2s linear infinite alternate ;
+}
+
+#start #bird{
+	/* border: 1px solid salmon; */
+	position: absolute;
+	top: 20px;
+	margin: 0 188px;
+}
+
+#start #btn_start{
+	/* border: 1px solid blue; */
+	position: absolute;
+	top: 300px;
+	margin: 0 128px;
+}
+/* 游戏界面 */
+#game{
+	/* border: 1px solid red; */
+	background-image: url(../img/bg.jpg);
+	width: 343px;
+	height: 480px;
+	position: absolute;
+	display: none;
+}
+#game #gameBird{
+	/* border: 1px solid green; */
+	position: absolute;
+	top: 100px;
+	left: 50px;
+}
+	
+#game #pipes{
+	/* border: 1px solid green; */
+	width: 343px;
+	height: 480px;
+	position: absolute;
+}
+#game #pipes #pipe{
+	/* border: 1px solid crimson; */
+	height: 480px;
+	width: 62px;
+	position: absolute;
+	left:343px
+}
+/* 水管上半部分 */
+#game #pipes #pipe #up{
+	/* border: 1px solid red; */
+	height:162px;
+}
+#game #pipes #pipe #up #up_mod{
+	/* border: 1px solid chartreuse; */
+	height: 102px;
+	background-image: url(../img/up_mod.png);
+}
+#game #pipes #pipe #up #up_pipe{
+	/* border: 1px solid yellow; */
+	background-image: url(../img/up_pipe.png);
+	height: 60px;
+}
+/* 水管下半部分 */
+#game #pipes #pipe #down{
+	/* border: 1px solid green; */
+	margin-top: 100px;
+	height:162px;
+}
+#game #pipes #pipe #down #down_pipe{
+	/* border: 1px solid red; */
+	background-image: url(../img/down_pipe.png);
+	height: 60px;
+}
+#game #pipes #pipe #down #down_mod{
+	/* border: 1px solid yellow; */
+	background-image: url(../img/down_mod.png);
+	height: 102px;
+}
+/* 地平线 滚动 */
+#floorLine{
+	/* border: 1px solid red; */
+	background-image: url(../img/banner.jpg);
+	width: 686px;
+	height: 14px;
+	position: absolute;
+	top: 424px;
+	animation: animFloorLine 2s linear infinite;
+}
+/* 控制游戏名称上下抖动 */
+@keyframes anim{
+	from{
+		top: 100px;
+	}
+	to{
+		top: 105px;
+	}
+}
+/* 控制地平线向左移动 */
+@keyframes animFloorLine{
+	from{
+		left: 0px;
+	}
+	to{
+		left: -343px;
+	}
+}
