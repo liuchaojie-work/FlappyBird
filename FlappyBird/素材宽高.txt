@@ -1,0 +1,11 @@
+banner.jpg   343 *14
+bg.jog  343*480
+bird.gif  40*26
+down.gif 40*30
+down_mod.png 62*2
+down_pipe.png 62*60
+head.jpg 236*77
+start.jpg 85*29
+up.gif 40*29
+up_mod.png 62*3
+up_pipe.png 62*60
