@@ -45,6 +45,15 @@ window.onload = function() {
 			if (top > 398) {
 				clearInterval(dsBird);
 			}
+			
+			if(speed<0){
+				gameBird.style.src = "url(img/up.gif)";
+				// document.getComputedStyle(gameBird,null)[src]="./img/bird.gif";
+			}
+			else{
+				gameBird.style.src = "url(img/down.gif)";
+				// document.getComputedStyle(gameBird,null)[src]="./img/down.gif";
+			}
 			gameBird.style.top = top + speed + "px";
 		}, 10);
 	}
