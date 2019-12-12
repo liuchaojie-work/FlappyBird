@@ -6,7 +6,7 @@
 	top: 50px;
 	margin: 0 auto;
 	position: relative;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 /* 主界面 */
@@ -65,7 +65,7 @@
 	height: 480px;
 	position: absolute;
 }
-#game #pipes #pipe{
+#game #pipes .pipe{
 	/* border: 1px solid crimson; */
 	height: 480px;
 	width: 62px;
@@ -73,35 +73,35 @@
 	left:343px
 }
 /* 水管上半部分 */
-#game #pipes #pipe #up{
+#game #pipes .pipe .up{
 	/* border: 1px solid red; */
-	height:162px;
+	/* height:162px; */
 }
-#game #pipes #pipe #up #up_mod{
+#game #pipes .pipe .up .up_mod{
 	/* border: 1px solid chartreuse; */
-	height: 102px;
+	/* height: 102px; */
 	background-image: url(../img/up_mod.png);
 }
-#game #pipes #pipe #up #up_pipe{
+#game #pipes .pipe .up .up_pipe{
 	/* border: 1px solid yellow; */
 	background-image: url(../img/up_pipe.png);
 	height: 60px;
 }
 /* 水管下半部分 */
-#game #pipes #pipe #down{
+#game #pipes .pipe .down{
 	/* border: 1px solid green; */
 	margin-top: 100px;
-	height:162px;
+	/* height:162px; */
 }
-#game #pipes #pipe #down #down_pipe{
+#game #pipes .pipe .down .down_pipe{
 	/* border: 1px solid red; */
 	background-image: url(../img/down_pipe.png);
 	height: 60px;
 }
-#game #pipes #pipe #down #down_mod{
+#game #pipes .pipe .down .down_mod{
 	/* border: 1px solid yellow; */
 	background-image: url(../img/down_mod.png);
-	height: 102px;
+	/* height: 102px; */
 }
 /* 地平线 滚动 */
 #floorLine{
